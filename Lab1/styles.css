@@ -9,6 +9,8 @@
 * {
   box-sizing: border-box;
   word-break: break-word;
+  overflow: auto;
+  text-align: start;
 }
 
 html {
@@ -24,7 +26,7 @@ body{
 
 footer{
   display: flex;
-  min-height: 100px;
+  min-height: 75px;
   background-color: var(--header-footer-bg);
   border: var(--border);
   border-bottom: none;
@@ -43,7 +45,6 @@ footer{
   background-color: var(--sidebars-bg);
   border: var(--border);
   border-bottom: none;
-
 }
 
 .top-left-part {
@@ -73,13 +74,24 @@ footer{
   background-color: var(--sidebars-bg);
   border: var(--border);
   border-bottom: none;
+  justify-content: left;
+  
+}
+
+ul {
+  list-style: none;
+  font-size: 2vw;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .central-part {
   display: flex;
   flex: 5;
   flex-direction: column;
-  min-height: 200px;
 }
 
 .lower-header {
@@ -103,37 +115,54 @@ img{
   height: 100%;
 }
 
-.inserted-block-footer, #inserted-block-header {
+.inserted-block-footer, .inserted-block-header {
   display: flex;
   text-align: center;
   border: var(--border);
-  padding: 0 2px;
-  min-height: 50px;
+  padding: 0 0.1vw;
+  min-height: 100px;
   margin: 3vh 3vw 3vh 3vw;
   justify-content: center;
   align-items: center;
-  width: 15%;
-  flex: 1; 
+  font-size: 1.5vw;
 }
 
-.inserted-block-footer h1, .inserted-block-header h1 {
+.inserted-block-footer{
+  width: 15%;
+}
+
+.inserted-block-header{
+  width: 18%;
+}
+
+.inserted-block-footer h1, #inserted-block-header h1 {
   margin: 0;
 }
 
 .text-div-footer {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 2vw;
+  padding-right: 2vw;
   width: 85%;
-  flex: 5;
 }
 
 .text-div-header {
-  width: 85%;
-  padding-left: 20px;
-  padding-right: 20px;
-  flex: 5;
+  width: 82%;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .menu {
-  line-height: 1.5
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .left-sidebar {
+    
+  }
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 1024px) {
+
 }
