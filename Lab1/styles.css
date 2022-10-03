@@ -45,6 +45,8 @@ footer{
   background-color: var(--sidebars-bg);
   border: var(--border);
   border-bottom: none;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .top-left-part {
@@ -130,14 +132,13 @@ p{
 }
 
 .inserted-block-footer, .inserted-block-header {
-  display: flex;
   text-align: center;
   border: var(--border);
   padding: 0 0.1vw;
   margin: 3vh 3vw 3vh 3vw;
   justify-content: center;
-  align-items: center;
   font-size: 2.2em;
+  max-height: 70px;
 }
 
 .inserted-block-footer{
@@ -175,6 +176,7 @@ aside p {
 @media screen and (max-width : 1024px) {
   .inserted-block-header, .inserted-block-footer {
     font-size: 2em;
+    max-height: 60px;
   }
   
   ul, p{
@@ -184,6 +186,7 @@ aside p {
 @media screen and (max-width : 800px) {
   .inserted-block-header, .inserted-block-footer {
     font-size: 1.1em;
+    max-height: 50px;
   }
 
   ul, p {
@@ -193,6 +196,7 @@ aside p {
 @media screen and (max-width : 420px) {
   .inserted-block-header, .inserted-block-footer {
     font-size: 0.6em;
+    max-height: 30px;
   }
 
   ul, p {
