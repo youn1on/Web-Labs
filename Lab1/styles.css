@@ -134,7 +134,6 @@ p{
   text-align: center;
   border: var(--border);
   padding: 0 0.1vw;
-  min-height: 100px;
   margin: 3vh 3vw 3vh 3vw;
   justify-content: center;
   align-items: center;
@@ -142,12 +141,11 @@ p{
 }
 
 .inserted-block-footer{
-  width: 15%;
+  padding: 0.3em 0.5em;
 }
 
-.inserted-block-header{
-  width: 18%;
-  max-height: 5vh;
+.inserted-block-header {
+  padding: 0.3em 0.5em;
 }
 
 .inserted-block-footer h1, .inserted-block-header h1 {
@@ -157,11 +155,11 @@ p{
 .text-div-footer {
   padding-left: 2vw;
   padding-right: 2vw;
-  width: 85%;
+  flex: 1;
 }
 
 .text-div-header {
-  width: 82%;
+  flex: 1;
   padding-left: 2vw;
   padding-right: 2vw;
 }
