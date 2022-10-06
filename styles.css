@@ -1,0 +1,12 @@
+﻿:root {
+    --hover-link-color: lightgrey;
+    --active-link-color: lightgreen;
+}
+
+a:hover {
+    background-color:var(--hover-link-color) ;
+}
+
+a:active {
+    background-color:var(--active-link-color);
+}
