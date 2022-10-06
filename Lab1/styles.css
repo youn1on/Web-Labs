@@ -29,11 +29,13 @@ body{
 
 footer{
   display: flex;
-  min-height: 75px;
+  min-height: 100px;
   background-color: var(--header-footer-bg);
   border: var(--border);
   border-bottom: none;
   border-right: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .not-footer {
@@ -68,13 +70,14 @@ a:active {
 }
 
 .top-header {
-  padding-top: 1vh;
   display: flex;
   min-height: 100px;
   background-color: var(--header-footer-bg);
   border: var(--border);
   border-bottom: none;
   border-right: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-central-part {
@@ -157,11 +160,12 @@ p{
 .inserted-block-footer, .inserted-block-header {
   text-align: center;
   border: var(--border);
-  padding: 0 0.1vw;
-  margin: 3vh 3vw 3vh 3vw;
+  padding: 1vh 1vw 1vh 1vw;
+  margin: 1vh 1vw 1vh 1vw;
   justify-content: center;
   font-size: 2.2em;
   max-height: 70px;
+  align-items: center;
 }
 
 .inserted-block-footer{
