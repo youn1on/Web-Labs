@@ -44,7 +44,7 @@ body {
 }
 
 .header {
-    min-height: 100px;
+   /* min-height: 100px;*/
     background-color: var(--header-footer-bg);
     border: var(--border);
     border-bottom: none;
@@ -73,7 +73,7 @@ body {
     border: var(--border);
     border-right: none;
     border-left: none;
-    min-height: 100px;
+    /*min-height: 100px;*/
     max-height: 120px;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -131,6 +131,20 @@ footer {
 
 .center{
     grid-area: center;
+    display: grid;
+    grid-template-areas: 
+            "image"
+            "text";
+    grid-template-rows: 20% 80%;
+}
+
+.image-div {
+    grid-area: image;
+    overflow: hidden;
+}
+
+.text-div-center{
+   grid-area: text; 
 }
 
 .right-sidebar{
