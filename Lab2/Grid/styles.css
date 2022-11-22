@@ -11,27 +11,26 @@
 
 *{
     word-break: break-word;
-    overflow: auto;
+    box-sizing: border-box;
     text-align: start;
 }
 
 html{
     box-sizing: border-box;
-    height: 100%
+    min-height: 100%
 }
 
 body{
-    height: 100%;
+    min-height: 100%;
     font-family: sans-serif;
+    margin: 0;
 }
 
 .container {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.65fr;
-    grid-template-rows: 20% 10% 50% 20%;
     grid-template-areas: 
             "header header right-sidebar"
             "left-sidebar lower-header right-sidebar"
@@ -122,21 +121,25 @@ footer{
     display: grid;
     grid-template-areas: 
             "image"
+            "text"
+            "text"
+            "text"
             "text";
-    grid-template-rows: 20% 80%;
 }
 
 .image-div {
     grid-area: image;
-    overflow: hidden;
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
 }
 
 .text-div-center{
-    min-height: 100px;
-    display: flex;
     grid-area: text;
     padding: 3%;
-    overflow: hidden;
+    min-height: 100%;
 }
 
 img{
@@ -146,19 +149,16 @@ img{
 }
 
 .second-page-image {
-    overflow: hidden;
     align-items: center;
     justify-content: center;
 }
 
 .third-page-image {
-    overflow: hidden;
     align-items: center;
     justify-content: center;
 }
 
 .fifth-page-image {
-    overflow: hidden;
     align-items: center;
     justify-content: center;
 }
@@ -203,10 +203,6 @@ h1 {
     font-size: 0.8em;
 }
 
-aside p {
-    alignment: bottom;
-}
-
 a:hover {
     background-color:var(--hover-link-color) ;
 }
@@ -246,8 +242,3 @@ a:active {
         font-size: 0.6em;
     }
 }
-
-
-
-
-
