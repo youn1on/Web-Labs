@@ -17,20 +17,20 @@
 
 html{
     box-sizing: border-box;
-    min-height: 100%
+    min-height: 100%;
 }
 
 body{
     min-height: 100%;
-    font-family: sans-serif;
     margin: 0;
+    font-size: 1.3em;
 }
 
 .container {
     margin: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.65fr;
+    grid-template-columns: 0.45fr 2fr 0.5fr;
     grid-template-areas: 
             "header header right-sidebar"
             "left-sidebar lower-header right-sidebar"
@@ -45,21 +45,22 @@ footer{
     border-right: none;
     display: grid;
     grid-area: footer;
-    grid-template-rows: 25% 50% 25%;
-    grid-template-columns: 81% 12% 7%;
+    grid-template-columns: 82% 17% 1%;
     grid-template-areas: 
             "text-area-footer . ."
+            "text-area-footer inserted-block-footer ."
             "text-area-footer inserted-block-footer ."
             "text-area-footer . .";
 }
 
 .inserted-block-footer{
     grid-area: inserted-block-footer;
-}
+    margin: auto;
+    }
 
 .text-area-footer{
     grid-area: text-area-footer;
-    padding: 3%;
+    padding-left: 10px;
 }
 
 .header{
@@ -70,31 +71,26 @@ footer{
     border-right: none;
     display: grid;
     grid-area: header;
-    grid-template-rows: 25% 50% 25%;
-    grid-template-columns: 7% 16% 77%;
+    grid-template-columns: 1% 17% 82%;
     grid-template-areas: 
             ". . text-area-header"
+            ". inserted-block-header text-area-header"
             ". inserted-block-header text-area-header"
             ". . text-area-header";
 }
 
 .inserted-block-header {
     grid-area: inserted-block-header;
+    margin: auto;
+    display: inline;
 }
 
 .text-area-header{
     grid-area: text-area-header;
-    padding: 3%;
-}
-
-.text-area-footer, .text-area-header {
-    padding-left: 2vw;
-    padding-right: 2vw;
 }
 
 .inserted-block-footer, .inserted-block-header {
     border: var(--border);
-    margin: 1vh 1vw 1vh 1vw;
     font-size: 2.2em;
     max-height: 70px;
     justify-content: center;
@@ -102,11 +98,14 @@ footer{
 }
 
 .inserted-block-header h1, .inserted-block-footer h1 {
+    display: table-cell;
     text-align: center;
-    margin: 0;
+    vertical-align: middle;
+    justify-content: center;
 }
 
 .lower-header{
+    min-height: 70px;
     grid-area: lower-header;
     background-color: var(--lower-header-bg);
     border: var(--border);
@@ -119,6 +118,7 @@ footer{
 .center{
     grid-area: center;
     display: grid;
+    min-height: 500px;
     grid-template-areas: 
             "image"
             "text"
@@ -129,6 +129,7 @@ footer{
 
 .image-div {
     grid-area: image;
+    min-height: 70px; 
 }
 
 .image-div img {
@@ -137,15 +138,9 @@ footer{
 }
 
 .text-div-center{
+    min-height: 100px;
     grid-area: text;
     padding: 3%;
-    min-height: 100%;
-}
-
-img{
-    height: auto;
-    width: auto;
-    overflow: hidden;
 }
 
 .second-page-image {
@@ -189,7 +184,6 @@ img{
 ul, ol {
     margin-top: 0;
     list-style: none;
-    font-size: 1.3em;
     text-align: left;
     padding: 0;
 }
