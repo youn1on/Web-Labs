@@ -3,11 +3,20 @@
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <table class="layout" width="100%" cellpadding="0" cellspacing="0">
+  <table class="layout">
       <tr>
-          <td colspan="2">header</td>
+          <td colspan="2">
+              <table >
+              <tr>
+                  <td class = "inserted-block-header"></td>
+                  <td rowspan="3" class = "text-area-header">header
+                  </td>
+              </tr>
+              </table>
+          </td>
           <td rowspan="3">right-sidebar</td>
       </tr>
       <tr>
@@ -18,7 +27,14 @@
           <td>center</td>
       </tr>
       <tr>
-          <td colspan = "3">footer</td>
+          <td colspan = "3">
+              <table>
+                  <tr>
+                      <td rowspan="3" class = "text-area-footer"></td>
+                      <td class = "inserted-block-footer"></td>
+                  </tr>
+              </table>
+          </td>
       </tr>
   </table> 
   
