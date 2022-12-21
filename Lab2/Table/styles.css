@@ -17,29 +17,25 @@
 }
 
 html {
-    min-height: 100%;
+    height: 100%;
 }
 
 body {
-    min-height: 100%;
+    height: 100%;
     margin: 0;
 }
 
 table {
-    border: none;
-    width: 100%;
-    height: 100%;
     border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.layout {
-    display: table;
-    table-layout: auto;
-    min-height: 100vh;
-}
-
-td{
-    text-align: center;
+table td {
+    padding: 0;
+    margin: 0;
 }
 
 .footer{
@@ -61,8 +57,7 @@ td{
     padding-top: 1vh;
 }
 
-
-.top-header {
+.header {
     min-height: 100px;
     background-color: var(--header-footer-bg);
     border: var(--border);
@@ -91,92 +86,6 @@ td{
     padding-left: 2vw;
     padding-right: 2vw;
 }
-
-h1 {
-    font-size: 1em;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-p{
-    font-size: 1.3em;
-}
-
-.inserted-block-footer, .inserted-block-header {
-    text-align: center;
-    border: var(--border);
-    padding: 1vh 1vw 1vh 1vw;
-    margin: 1vh 1vw 1vh 1vw;
-    justify-content: center;
-    font-size: 2.2em;
-    max-height: 70px;
-    align-items: center;
-}
-
-.inserted-block-footer{
-    padding: 0.3em 0.5em;
-}
-
-.inserted-block-header {
-    padding: 0.3em 0.5em;
-}
-
-.text-div-footer {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    width: 85%
-}
-
-.text-div-header {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    width: 80%
-}
-
-a:hover {
-    background-color:var(--hover-link-color) ;
-}
-
-a:active {
-    background-color:var(--active-link-color);
-}
-
-@media screen and (max-width : 1024px) {
-    .inserted-block-header, .inserted-block-footer {
-        font-size: 2em;
-        max-height: 60px;
-    }
-
-    ul, ol, p{
-        font-size: 1em;
-    }
-}
-@media screen and (max-width : 800px) {
-    .inserted-block-header, .inserted-block-footer {
-        font-size: 1.1em;
-        max-height: 50px;
-    }
-
-    ul, ol, p {
-        font-size: 0.9em;
-    }
-}
-@media screen and (max-width : 420px) {
-    .inserted-block-header, .inserted-block-footer {
-        font-size: 0.6em;
-        max-height: 30px;
-    }
-
-    ul, ol, p {
-        font-size: 0.6em;
-    }
-}
-
-
-
 
 
 
