@@ -25,13 +25,17 @@ body {
     margin: 0;
 }
 
+.layout{
+    height: 100%;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
     border: 0;
-    height: 100%;
     width: 100%;
 }
+
 
 table td {
     padding: 0;
@@ -39,7 +43,6 @@ table td {
 }
 
 .footer{
-    min-height: 100px;
     background-color: var(--header-footer-bg);
     border: var(--border);
     border-bottom: none;
@@ -55,10 +58,10 @@ table td {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 1vh;
+    width: 20%;
 }
 
 .header {
-    min-height: 100px;
     background-color: var(--header-footer-bg);
     border: var(--border);
     border-bottom: none;
@@ -74,6 +77,8 @@ table td {
     justify-content: left;
     padding-left: 1vw;
     padding-right: 1vw;
+    width: 22%;
+    height: 100%;
 }
 
 .lower-header {
@@ -87,5 +92,18 @@ table td {
     padding-right: 2vw;
 }
 
+.central-part{
+    height: 100%;
+}
 
+.main{
+    height: 100%
+}
 
+.footer-part{
+    height: 100%;
+}
+
+.left-central-part{
+    height: 100%;
+}
