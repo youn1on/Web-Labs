@@ -1,0 +1,266 @@
+:root {
+  --text-color: grey;
+  --border: 1px solid black;
+  --sidebars-bg: #d1e1dd;
+  --header-footer-bg: #dee5e5;
+  --lower-header-bg: rgba(197, 224, 224, 0.89);
+  --current-page-color: #010f4b;
+  --hover-link-color: lightgrey;
+  --active-link-color: lightgreen;
+  }
+
+* {
+  word-break: break-word;
+  overflow: auto;
+  text-align: start;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer, .top-header{
+  display: flex;
+  min-height: 100px;
+  background-color: var(--header-footer-bg);
+  border: var(--border);
+  border-bottom: none;
+  border-right: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-footer {
+  display: flex;
+  flex: 5;
+  flex-direction: row;
+}
+
+a:hover {
+  background-color:var(--hover-link-color) ;
+}
+
+a:active {
+  background-color:var(--active-link-color);
+}
+
+.right-sidebar {
+  display: flex;
+  flex: 1;
+  background-color: var(--sidebars-bg);
+  border: var(--border);
+  border-bottom: none;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vh;
+}
+
+.top-left-part {
+  display: flex;
+  flex: 6.6;
+  flex-direction: column;
+}
+
+/*.top-header {
+  display: flex;
+  flex: 1;
+  min-height: 100px;
+  background-color: var(--header-footer-bg);
+  border: var(--border);
+  border-bottom: none;
+  border-right: none;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.left-central-part {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+}
+
+.left-sidebar {
+  display: flex;
+  flex: 1;
+  background-color: var(--sidebars-bg);
+  border: var(--border);
+  border-bottom: none;
+  justify-content: left;
+  padding-left: 1vw;
+  flex-direction: column;
+  padding-right: 1vw;
+}
+
+ul, ol {
+  list-style: none;
+  font-size: 1.3em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.central-part {
+  display: flex;
+  flex: 4.5;
+  flex-direction: column;
+}
+
+.lower-header {
+  display: flex;
+  background-color: var(--lower-header-bg);
+  border: var(--border);
+  border-right: none;
+  border-left: none;
+  min-height: 100px;
+  max-height: 120px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+.center {
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.second-page-image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+  font-size: 1.3em;
+}
+
+.inserted-block-footer, .inserted-block-header {
+  flex: 1;
+  text-align: center;
+  padding: 1vh 1vw 1vh 1vw;
+  margin: 1vh 1vw 1vh 1vw;
+  justify-content: center;
+  font-size: 2.2em;
+  max-height: 70px;
+  align-items: center;
+}
+
+.inserted-block-footer h1, .inserted-block-header h1 {
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  border: var(--border);
+  padding: 1vh 1vw 1vh 1vw;
+  margin: auto;
+  max-height: 70px;
+  align-items: center;
+}
+
+.text-div-footer {
+  padding-left: 1vw;
+  flex: 6.2;
+}
+
+.text-div-header {
+  padding-right: 1vw;
+  flex: 5.1;
+}
+
+.menu ul{
+  line-height: 1.2;
+}
+
+aside p {
+  alignment: bottom;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%
+}
+
+.image-div {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-page-image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifth-page-image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-page{
+  color: var(--current-page-color);
+}
+
+.text-div-center {
+  padding:1vh 2vw 1vh 2vw;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+@media screen and (max-width : 1024px) {
+  .inserted-block-header, .inserted-block-footer {
+    font-size: 2em;
+    max-height: 60px;
+  }
+  
+  ul, ol, p{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width : 800px) {
+  .inserted-block-header, .inserted-block-footer {
+    font-size: 1.1em;
+    max-height: 50px;
+  }
+
+  ul, ol, p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width : 420px) {
+  .inserted-block-header, .inserted-block-footer {
+    font-size: 0.6em;
+    max-height: 30px;
+  }
+
+  ul, ol, p {
+    font-size: 0.6em;
+  }
+}
