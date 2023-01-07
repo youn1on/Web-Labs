@@ -1,6 +1,6 @@
 ﻿:root {
     --text-color: grey;
-    --border: 0.2vh solid black;
+    --border: 1px solid black;
     --sidebars-bg: #d1e1dd;
     --header-footer-bg: #dee5e5;
     --lower-header-bg: rgba(197, 224, 224, 0.89);
@@ -30,7 +30,7 @@ body{
     margin: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 0.45fr 2fr 0.5fr;
+    grid-template-columns: 0.51fr 2fr 0.51fr;
     grid-template-areas: 
             "header header right-sidebar"
             "left-sidebar lower-header right-sidebar"
@@ -45,12 +45,12 @@ footer{
     border-right: none;
     display: grid;
     grid-area: footer;
-    grid-template-columns: 82% 17% 1%;
+    grid-template-columns: 2.5fr 0.51fr;
     grid-template-areas: 
-            "text-area-footer . ."
-            "text-area-footer inserted-block-footer ."
-            "text-area-footer inserted-block-footer ."
-            "text-area-footer . .";
+            "text-area-footer ."
+            "text-area-footer inserted-block-footer"
+            "text-area-footer inserted-block-footer"
+            "text-area-footer .";
 }
 
 .inserted-block-footer{
@@ -71,12 +71,12 @@ footer{
     border-right: none;
     display: grid;
     grid-area: header;
-    grid-template-columns: 1% 17% 82%;
+    grid-template-columns: 0.5fr 2fr;
     grid-template-areas: 
-            ". . text-area-header"
-            ". inserted-block-header text-area-header"
-            ". inserted-block-header text-area-header"
-            ". . text-area-header";
+            ". text-area-header"
+            "inserted-block-header text-area-header"
+            "inserted-block-header text-area-header"
+            ". text-area-header";
 }
 
 .inserted-block-header {
@@ -87,21 +87,29 @@ footer{
 
 .text-area-header{
     grid-area: text-area-header;
+    padding-right: 10px;
 }
 
 .inserted-block-footer, .inserted-block-header {
-    border: var(--border);
+    text-align: center;
+    padding: 1vh 1vw 1vh 1vw;
+    margin: 1vh 1vw 1vh 1vw;
+    justify-content: center;
     font-size: 2.2em;
     max-height: 70px;
-    justify-content: center;
     align-items: center;
 }
 
 .inserted-block-header h1, .inserted-block-footer h1 {
-    display: table-cell;
     text-align: center;
     vertical-align: middle;
     justify-content: center;
+    border: var(--border);
+    padding: 1vh 1vw 1vh 1vw;
+    margin: auto;
+    font-size: 0.8em;
+    max-height: 70px;
+    align-items: center;
 }
 
 .lower-header{
@@ -118,7 +126,7 @@ footer{
 .center{
     grid-area: center;
     display: grid;
-    min-height: 500px;
+    min-height: 400px;
     grid-template-areas: 
             "image"
             "text"
@@ -140,7 +148,7 @@ footer{
 .text-div-center{
     min-height: 100px;
     grid-area: text;
-    padding: 3%;
+    padding:1vh 2vw 1vh 2vw;
 }
 
 .second-page-image {
@@ -184,7 +192,7 @@ footer{
 ul, ol {
     margin-top: 0;
     list-style: none;
-    text-align: left;
+    text-align: left;   
     padding: 0;
 }
 
@@ -195,6 +203,10 @@ ol {
 
 h1 {
     font-size: 0.8em;
+}
+
+li p{
+    margin: 0;
 }
 
 a:hover {
