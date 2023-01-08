@@ -68,18 +68,6 @@ a:active {
   flex-direction: column;
 }
 
-/*.top-header {
-  display: flex;
-  flex: 1;
-  min-height: 100px;
-  background-color: var(--header-footer-bg);
-  border: var(--border);
-  border-bottom: none;
-  border-right: none;
-  justify-content: center;
-  align-items: center;
-}*/
-
 .left-central-part {
   display: flex;
   flex: 4;
@@ -146,13 +134,6 @@ img{
   height: 100%;
 }
 
-.second-page-image {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 p{
   font-size: 1.3em;
 }
@@ -203,20 +184,6 @@ img {
 }
 
 .image-div {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.third-page-image {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fifth-page-image {
   overflow: hidden;
   display: flex;
   align-items: center;

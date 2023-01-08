@@ -151,21 +151,6 @@ footer{
     padding:1vh 2vw 1vh 2vw;
 }
 
-.second-page-image {
-    align-items: center;
-    justify-content: center;
-}
-
-.third-page-image {
-    align-items: center;
-    justify-content: center;
-}
-
-.fifth-page-image {
-    align-items: center;
-    justify-content: center;
-}
-
 .current-page{
     color: var(--current-page-color);
 }

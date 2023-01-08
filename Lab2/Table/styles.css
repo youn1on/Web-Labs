@@ -200,10 +200,26 @@ p{
     line-height: 1.2;
 }
 
+.current-page{
+    color: var(--current-page-color);
+}
+
+a:hover {
+    background-color:var(--hover-link-color) ;
+}
+
+a:active {
+    background-color:var(--active-link-color);
+}
+
 aside p {
     alignment: bottom;
 }
 
 .current-page{
     color: var(--current-page-color);
+}
+
+p, li > a{
+    font-size: 1.3em;
 }
