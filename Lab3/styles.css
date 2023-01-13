@@ -13,8 +13,6 @@
 
 @media screen and (max-width : 1100px) {
   * {
-    /*word-break: break-word;*/
-    /*overflow: auto;*/
     text-align: start;
   }
 
@@ -42,7 +40,6 @@
 
   .not-footer {
     display: flex;
-    /*flex: 5;*/
     flex-direction: column;
   }
 
@@ -56,7 +53,6 @@
 
   .right-sidebar {
     display: flex;
-    /*flex: 1;*/
     background-color: var(--sidebars-bg);
     border: var(--border);
     border-bottom: none;
@@ -65,19 +61,16 @@
 
   .top-left-part {
     display: flex;
-    /*flex: 6.6;*/
     flex-direction: column;
   }
 
   .left-central-part {
     display: flex;
-    /*flex: 4;*/
     flex-direction: column;
   }
 
   .left-sidebar {
     display: flex;
-    /*flex: 1;*/
     background-color: var(--sidebars-bg);
     border: var(--border);
     border-bottom: none;
@@ -105,7 +98,6 @@
 
   .central-part {
     display: flex;
-    /*flex: 4.5;*/
     flex-direction: column;
   }
 
@@ -127,7 +119,6 @@
 
   .center {
     display: flex;
-    /*flex: 5;*/
     flex-direction: column;
   }
 
@@ -141,7 +132,6 @@
   }
 
   .inserted-block-footer, .inserted-block-header {
-    /*flex: 1;*/
     text-align: center;
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
@@ -164,12 +154,10 @@
 
   .text-div-footer {
     padding-left: 1vw;
-    /*flex: 6.2;*/
   }
 
   .text-div-header {
     padding-right: 1vw;
-    /*flex: 5.1;*/
   }
   
   .menu ul {
@@ -199,7 +187,6 @@
   .text-div-center {
     padding: 1vh 2vw 1vh 2vw;
     display: flex;
-    /*flex: 1;*/
     flex-direction: column;
   }
   
